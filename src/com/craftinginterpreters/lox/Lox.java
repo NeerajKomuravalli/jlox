@@ -41,9 +41,11 @@ public class Lox {
     InputStreamReader input = new InputStreamReader(System.in);
     BufferedReader reader = new BufferedReader(input);
 
+    // Run forever
     for (;;) { 
       System.out.print("> ");
       run(reader.readLine());
+      // Even if the error occurs we don't want the command line interface to not run so we will revert back the status
       hadError = false;
     }
   }

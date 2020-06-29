@@ -1,4 +1,4 @@
 .idea/
 *.iml
 out/
-*.runThisFile.lox
+src/com/craftinginterpreters/lox/runThisFile.lox
