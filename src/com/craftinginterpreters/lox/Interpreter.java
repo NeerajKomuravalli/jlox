@@ -165,7 +165,7 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void> {
                 execute(statement);
             }
         } finally {
-            this.environment = environment;
+            this.environment = previous;
         }
     }
 
