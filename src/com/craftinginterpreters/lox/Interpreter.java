@@ -90,7 +90,6 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void> {
                 if (left instanceof String && right instanceof String) {
                     return (String)left + (String) right;
                 }
-
                 throw new RuntimeError(expr.operator, "Operands must be both string or numbers");
         }
         return null;
